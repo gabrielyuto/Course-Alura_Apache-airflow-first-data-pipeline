@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /home/gabriel/Documents/projetos/apache-airflow/alura-apache-airflow-orquestrando-primeiro-pipeline-dados/airflow-alura/venv/bin/python3.9 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from alembic.config import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
